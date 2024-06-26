@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+body {
+    background-image: linear-gradient(#48c5ef, #1261AA);
+}
+
+/* Animations */
+
+@keyframes translate {
+
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes translateY {
+
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+@keyframes Rotati {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
+/* Sun Design */
+
+.Bigsun {  
+    animation: Rotati infinite 3s alternate-reverse;
+    font-size: 70px;
+}
+
+#sun {
+    color: #FFD700;
+    text-align: center;
+}
+
+.sun {
+    padding-top: 20px;
+}
+
+
+
+/* Cloud Design */
+.fa-cloud-sun {
+    text-align: center;
+}
+
+#cloud {
+    animation: translate infinite 3s alternate-reverse;
+}
+
+
+
+/* Header design */ 
+
+
+header {
+    display: flex;
+    padding: 10px;
+}
+
+header div:nth-child(1) {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.data1 {
+    padding-left: 20px;
+}
+
+.data1 p:nth-child(1) {
+    font-size: 50px;
+}
+
+.data1 p:nth-child(2) {
+    font-size: 30px;
+}
+
+
+/* First section design */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgba(255,255,255, .2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow-x: auto;
+}
+
+#div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    min-width: 50px;
+}
+
+/* second section design */
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255,255,255, .2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+/* Humidity Drop Spacing */
+.fa-droplet {
+    margin-right: 3px;
+}
+
+#div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#div2>*{
+    min-width: 50px;
+}
+
+/* Footer design */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255,255,255, .2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+.Sunrise , .Sunset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.Sunrise i, .Sunset i {
+    font-size: 70px;
+}
+
+.fa-arrow-up , .fa-arrow-down {
+    margin-top: -40px;
+    font-size: 50px!important;
+    animation: translateY infinite 1s alternate-reverse;
+}
